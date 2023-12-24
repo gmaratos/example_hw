@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Correct key",
+      "setup": "",
+      "run": "grep 'pass' grade.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
