@@ -9,10 +9,10 @@ jobs:
         runs-on: ubuntu-22.04
         steps:
           - uses: actions/checkout@v2
-          - name: Prepare autograder
-            run: cp .github/autograder.sh autograder.sh
+          - name: Prepare autograde
+            run: cp .github/autograde.sh autograde.sh
           - name: Compile submission
             run: make clean && make
-          - name: Run autograder
-            run: ./autograder.sh
+          - name: Run autograde
+            run: ./autograde.sh
           - uses: education/autograding@v1
